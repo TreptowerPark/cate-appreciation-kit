@@ -1,0 +1,31 @@
+{
+  "name": "cate-appreciation-kit",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A small public bundle of spatial AI canvas patterns, offered as a token of appreciation to Cate’s builders.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "verify:public-safe": "node scripts/verify-public-safe.mjs"
+  },
+  "keywords": [
+    "cate",
+    "spatial-canvas",
+    "ai-agents",
+    "react",
+    "electron",
+    "streaming",
+    "developer-tools"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "typescript": "latest",
+    "vitest": "latest",
+    "react": "latest"
+  }
+}
