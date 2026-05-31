@@ -14,6 +14,7 @@ It includes:
 - agent tool approval protocol notes
 - spatial overview ↔ focused reading/writing mode notes
 - canvas IDE performance checklist
+- high-density canvas navigation UX policies
 - AI/user-output security vectors
 
 ## What this repo is not
@@ -35,6 +36,7 @@ Cate already explores a spatial desktop IDE. These artifacts may help with adjac
 - making risky agent tools clear and user-approved
 - helping users move between overview and focused work without getting lost
 - profiling heavy canvas/webview/editor/terminal surfaces
+- tuning wheel ownership, focus reveal, safe-area viewport math, and spatial hotkeys
 - testing AI-generated text before rendering it as HTML
 
 ## Quick map
@@ -51,6 +53,11 @@ Cate already explores a spatial desktop IDE. These artifacts may help with adjac
 | `docs/spatial-focus-mode-notes.md` | spatial ↔ focused mode lessons |
 | `examples/spatial-state-machine/spatialStateMachine.ts` | minimal phase reducer |
 | `docs/canvas-ide-performance-checklist.md` | performance checklist |
+| `docs/canvas-navigation-ux.md` | clean-room canvas navigation UX kit overview |
+| `docs/high-density-canvas-navigation-principles.md` | compact navigation principles for dense canvases |
+| `packages/canvas-navigation-ux/src/index.ts` | framework-agnostic navigation policy utilities |
+| `examples/canvas-navigation-policy/` | wheel/focus/safe-area/spatial-hotkey example |
+| `tests/canvas-navigation-ux.test.ts` | navigation policy edge-case tests |
 | `docs/ai-output-security.md` | output-rendering security notes |
 | `tests/ai-output-security-vectors.test.ts` | generic XSS/security vectors |
 | `LLM_INDEX.md` | concise machine-readable guide |
@@ -62,8 +69,9 @@ Cate already explores a spatial desktop IDE. These artifacts may help with adjac
 2. Adapt `LeafStreamStore` around Cate panel IDs, chat IDs, or output cell IDs.
 3. Treat `tool-approval-protocol` as a UI contract, not as an execution system.
 4. Use `spatialStateMachine.ts` as a sketch for mode transitions and viewport restore.
-5. Copy security vectors into Cate’s renderer tests, then add Cate-specific cases.
-6. Run profiling before changing architecture.
+5. Review `docs/canvas-navigation-ux.md` if dense canvas navigation feels slippery or focus reveal needs sharper policy.
+6. Copy security vectors into Cate’s renderer tests, then add Cate-specific cases.
+7. Run profiling before changing architecture.
 
 ## For humans
 
@@ -72,6 +80,7 @@ Start with:
 - `docs/canvas-ide-performance-checklist.md`
 - `docs/agent-tool-approval.md`
 - `docs/spatial-focus-mode-notes.md`
+- `docs/canvas-navigation-ux.md`
 
 Everything here is intentionally small. If one note saves you one debugging session, it did its job.
 

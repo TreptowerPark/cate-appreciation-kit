@@ -52,9 +52,9 @@ describe('canvas navigation UX policy', () => {
       { width: 1200, height: 800 },
       { left: 240 },
     );
-    // Safe area is x=240..1200, center x=720. Node center is 1200.
+    // Safe area center is (720, 400). Node center is (1200, 350).
     expect(viewport.x).toBe(-480);
-    expect(viewport.y).toBe(125);
+    expect(viewport.y).toBe(50);
   });
 
   it('chooses temporal previous and next', () => {

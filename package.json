@@ -16,6 +16,8 @@
     "ai-agents",
     "react",
     "electron",
+    "navigation",
+    "canvas-navigation",
     "streaming",
     "developer-tools"
   ],

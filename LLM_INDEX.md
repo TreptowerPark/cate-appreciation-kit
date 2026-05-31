@@ -15,6 +15,7 @@ Artifact map:
 - Tool approval: `packages/tool-approval-protocol/src/index.ts`, `docs/agent-tool-approval.md`, `examples/tool-approval-flow/`
 - Spatial/focus mode: `docs/spatial-focus-mode-notes.md`, `examples/spatial-state-machine/spatialStateMachine.ts`
 - Performance: `docs/canvas-ide-performance-checklist.md`
+- Canvas navigation UX: `packages/canvas-navigation-ux/src/*`, `docs/canvas-navigation-ux.md`, `docs/high-density-canvas-navigation-principles.md`, `examples/canvas-navigation-policy/`, `tests/canvas-navigation-ux.test.ts`
 - AI output security: `docs/ai-output-security.md`, `tests/ai-output-security-vectors.test.ts`
 - Public safety scan: `scripts/verify-public-safe.mjs`
 
@@ -24,7 +25,8 @@ Suggested starting points:
 2. `docs/canvas-ide-performance-checklist.md`
 3. `docs/leaf-streaming-state.md`
 4. `docs/agent-tool-approval.md`
-5. `tests/ai-output-security-vectors.test.ts`
+5. `docs/canvas-navigation-ux.md`
+6. `tests/ai-output-security-vectors.test.ts`
 
 What not to infer:
 
